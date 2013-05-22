@@ -1,0 +1,1 @@
+Spring Social extension with connection support for Meetup.org 
