@@ -29,11 +29,11 @@ public interface UserOperations {
 
 	/**
 	 * Retrieves the authenticated user's Meetup profile details.
-	 * @return a {@link MeetupMemberProfile} object representing the user's profile.
+	 * @return a {@link MemberProfile} object representing the user's profile.
 	 * @throws ApiException if there is an error while communicating with Meetup.
 	 * @throws MissingAuthorizationException if MeetupTemplate was not created with OAuth credentials.
 	 */
-	MeetupMemberProfile getUserProfile();
+	MemberProfile getUserProfile();
 
 	/**
 	 * Retrieves a specific user's Meetup profile details.
@@ -43,29 +43,29 @@ public interface UserOperations {
 	 * @throws ApiException if there is an error while communicating with Meetup.
 	 * @throws MissingAuthorizationException if MeetupTemplate was not created with OAuth credentials.
 	 */
-	MeetupMemberProfile getUserProfile(String screenName);
+	MemberProfile getUserProfile(String screenName);
 
 	/**
 	 * Retrieves a specific user's Meetup profile details.
 	 * Note that this method does not require authentication.
 	 * @param userId the user ID for the user whose details are to be retrieved.
-	 * @return a {@link MeetupMemberProfile} object representing the user's profile.
+	 * @return a {@link MemberProfile} object representing the user's profile.
 	 * @throws ApiException if there is an error while communicating with Meetup.
 	 * @throws MissingAuthorizationException if MeetupTemplate was not created with OAuth credentials.
 	 */
-	MeetupMemberProfile getUserProfile(long userId);
+	MemberProfile getUserProfile(long userId);
 
 	/**
 	 * Retrieves a list of Meetup profiles for the given list of user IDs.
 	 * @throws ApiException if there is an error while communicating with Meetup.
 	 * @throws MissingAuthorizationException if MeetupTemplate was not created with OAuth credentials.
 	 */
-	List<MeetupMemberProfile> getUsers(long... userIds);
+	List<MemberProfile> getUsers(long... userIds);
 
 	/**
 	 * Retrieves a list of Meetup profiles for the given list of screen names.
 	 * @throws ApiException if there is an error while communicating with Meetup.
 	 * @throws MissingAuthorizationException if MeetupTemplate was not created with OAuth credentials.
 	 */
-	List<MeetupMemberProfile> getUsers(String... screenNames);
+	List<MemberProfile> getUsers(String... screenNames);
 }

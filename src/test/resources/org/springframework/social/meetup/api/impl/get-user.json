@@ -1,0 +1,129 @@
+{
+	"birthday" : {
+		"month" : 12,
+		"year" : 1984,
+		"day" : 7
+	},
+	"lon" : -70.63999938964844,
+	"hometown" : "Santiago",
+	"link" : "http://www.meetup.com/members/14146581",
+	"self" : {
+		"common" : {
+			
+		}
+	},
+	"photo" : {
+		"photo_link" : "http://photos1.meetupstatic.com/photos/member/c/1/a/4/member_69049572.jpeg",
+		"thumb_link" : "http://photos3.meetupstatic.com/photos/member/c/1/a/4/thumb_69049572.jpeg",
+		"photo_id" : 69049572
+	},
+	"lang" : "en_US",
+	"country" : "cl",
+	"city" : "Santiago",
+	"id" : 14146581,
+	"visited" : 1369673856000,
+	"topics" : [
+		{
+			"id" : 50223,
+			"urlkey" : "agile-software-development",
+			"name" : "Agile Software Development"
+		},
+		{
+			"id" : 17627,
+			"urlkey" : "programming",
+			"name" : "Programming"
+		},
+		{
+			"id" : 127567,
+			"urlkey" : "ios-development",
+			"name" : "iOS Development"
+		},
+		{
+			"id" : 17628,
+			"urlkey" : "programming-languages",
+			"name" : "Programming Languages"
+		},
+		{
+			"id" : 20346,
+			"urlkey" : "android-developers",
+			"name" : "Android developers"
+		},
+		{
+			"id" : 58162,
+			"urlkey" : "nosql",
+			"name" : "NoSQL"
+		},
+		{
+			"id" : 17936,
+			"urlkey" : "scala",
+			"name" : "Scala"
+		},
+		{
+			"id" : 7029,
+			"urlkey" : "javascript",
+			"name" : "JavaScript"
+		},
+		{
+			"id" : 78565,
+			"urlkey" : "html5",
+			"name" : "HTML5"
+		},
+		{
+			"id" : 21683,
+			"urlkey" : "groovy-programming-language",
+			"name" : "Groovy Programming Language"
+		},
+		{
+			"id" : 21520,
+			"urlkey" : "grails",
+			"name" : "Grails"
+		},
+		{
+			"id" : 189,
+			"urlkey" : "java",
+			"name" : "Java"
+		},
+		{
+			"id" : 20126,
+			"urlkey" : "groovy",
+			"name" : "Groovy"
+		},
+		{
+			"id" : 3833,
+			"urlkey" : "softwaredev",
+			"name" : "Software Developers"
+		},
+		{
+			"id" : 10209,
+			"urlkey" : "web",
+			"name" : "Web Technology"
+		},
+		{
+			"id" : 15582,
+			"urlkey" : "web-development",
+			"name" : "Web Development"
+		},
+		{
+			"id" : 15792,
+			"urlkey" : "software-development",
+			"name" : "Software Development"
+		},
+		{
+			"id" : 563,
+			"urlkey" : "opensource",
+			"name" : "Open Source"
+		}
+	],
+	"joined" : 1299027458000,
+	"bio" : "MeetupFan!",
+	"name" : "Jose Patricio Bovet Derpich",
+	"other_services" : {
+		"twitter" : {
+			"identifier" : "@josebovet"
+		},
+		"flickr" : {
+			"identifier" : "http://www.flickr.com/photos/jose_bovet/"
+		}
+	},
+	"lat" : -33.459999084472656
+}

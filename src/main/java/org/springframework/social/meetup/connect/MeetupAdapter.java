@@ -6,7 +6,7 @@ import org.springframework.social.connect.ConnectionValues;
 import org.springframework.social.connect.UserProfile;
 import org.springframework.social.connect.UserProfileBuilder;
 import org.springframework.social.meetup.api.Meetup;
-import org.springframework.social.meetup.api.MeetupMemberProfile;
+import org.springframework.social.meetup.api.MemberProfile;
 
 public class MeetupAdapter implements ApiAdapter<Meetup> {
 
@@ -14,7 +14,6 @@ public class MeetupAdapter implements ApiAdapter<Meetup> {
 	public boolean test(Meetup meetup) {
 		try {
 			meetup.userOperations().getUserProfile();
-
 			return true;
 		} catch (ApiException e) {
 			return false;
@@ -23,17 +22,17 @@ public class MeetupAdapter implements ApiAdapter<Meetup> {
 
 	@Override
 	public void setConnectionValues(Meetup meetup, ConnectionValues values) {
-		MeetupMemberProfile profile = meetup.userOperations().getUserProfile();
+		MemberProfile profile = meetup.userOperations().getUserProfile();
 		values.setProviderUserId(String.valueOf(profile.getId()));
-		values.setDisplayName(profile.getUserName());
+		values.setDisplayName(profile.getName());
 		values.setProfileUrl(profile.getLink());
-		values.setImageUrl(profile.getUserPhotoUrl());
+		values.setImageUrl(profile.getPhoto().getLink());
 	}
 
 	@Override
 	public UserProfile fetchUserProfile(Meetup meetup) {
-		MeetupMemberProfile userProfile = meetup.userOperations().getUserProfile();
-		return new UserProfileBuilder().setName(userProfile.getUserName()).setEmail(userProfile.getEmail()).build();
+		MemberProfile userProfile = meetup.userOperations().getUserProfile();
+		return new UserProfileBuilder().setName(userProfile.getName()).setEmail(userProfile.getEmail()).build();
 	}
 
 	@Override
